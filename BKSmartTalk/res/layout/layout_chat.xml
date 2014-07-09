@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff"
+    >
+
+    <!-- Listview of layout chat show all content in conversation -->
+
+    <ListView
+        android:id="@+id/layout_chat_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_above="@+id/layout_chat_form_input"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        >
+    </ListView>
+	<RelativeLayout 
+	    android:id="@+id/layout_chat_form_input"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/layout_chat_heigh_form_input"
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.3dip"
+	        android:background="#c6c6c6"
+	        android:layout_alignParentTop="true"
+	        >
+	    </LinearLayout>
+	    <Button 
+	        android:id="@+id/layout_chat_btVoice"
+	        android:layout_width="@dimen/layout_chat_size_button_voice"
+	        android:layout_height="@dimen/layout_chat_size_button_voice"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/item_chat_margin"
+	        android:background="@drawable/bt_voice_selecter"
+	        />
+	    <EditText 
+	        android:id="@+id/layout_chat_edittext"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="@dimen/item_chat_textsize"
+	        android:hint="@string/layout_chat_hint_edtext"
+	        android:layout_toLeftOf="@+id/layout_chat_btSend"
+	        android:layout_toRightOf="@+id/layout_chat_btVoice"
+	        android:background="@null"
+	        android:textColorHint="#c6c6c6"
+	        />
+	   <Button 
+	        android:id="@+id/layout_chat_btSend"
+	        android:layout_width="@dimen/layout_chat_witdh_button_send"
+	        android:layout_height="@dimen/layout_chat_heigh_edittext"
+	        android:text="@string/layout_chat_btSend"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="@color/color_text_send_selector"
+	        android:background="@drawable/bt_send_selecter"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

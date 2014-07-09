@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">BK Smart Talk</string>
+	<string name="layout_chat_hint_edtext">Write a message</string>
+	<string name="layout_chat_btSend">SEND</string>
+	<string name="setting">Settings</string>
+	<string name="language">Language</string>
+	<string name="save">SAVE</string>
+	<string name="yeah">y</string>
+	<string name="mounth">m</string>
+	<string name="date">d</string>
+	<string name="hour">h</string>
+	<string name="mimute">m</string>
+	<string name="justnow">just now</string>
+	<string name="a_minute_ago">a minute ago</string>
+	<string name="minute_ago"> minute ago</string>
+	<string name="a_hour_ago">a hour ago</string>
+	<string name="hour_ago"> hour ago</string>
+	<string name="day_ago"> day ago</string>
+	<string name="yesterday">yesterday</string>
+</resources>

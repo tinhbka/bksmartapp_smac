@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_above="@+id/layout_setting_btSave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/item_chat_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textSize="@dimen/layout_setting_fontsize_namelag"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/layout_setting_lvLang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_setting_height_lvLang"
+                android:layout_margin="@dimen/item_chat_margin"
+                android:divider="@null"
+                android:dividerHeight="@dimen/item_chat_margin"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+	<Button 
+	    android:id="@+id/layout_setting_btSave"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="@dimen/item_chat_margin"
+	    android:textColor="@color/color_text_send_selector"
+	    android:background="@drawable/bt_send_selecter"
+	    android:text="@string/save"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    />
+</RelativeLayout>

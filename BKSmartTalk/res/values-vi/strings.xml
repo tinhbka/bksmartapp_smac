@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BK Smart Talk</string>
+	<string name="layout_chat_hint_edtext">Nhập tin nhắn</string>
+	<string name="layout_chat_btSend">GỬI</string>
+	<string name="setting">Cài đặt</string>
+	<string name="language">Ngôn ngữ</string>
+	<string name="save">LƯU</string>
+	<string name="yeah">năm</string>
+	<string name="mounth">tháng</string>
+	<string name="date">ngày</string>
+	<string name="hour">giờ</string>
+	<string name="mimute">m</string>
+	<string name="justnow">vừa xong</string>
+	<string name="a_minute_ago">1 phút trước</string>
+	<string name="minute_ago"> phút trước</string>
+	<string name="a_hour_ago">1 giờ trước</string>
+	<string name="hour_ago"> giờ trước</string>
+	<string name="day_ago"> ngày trước</string>
+	<string name="yesterday">hôm qua</string>
+</resources>

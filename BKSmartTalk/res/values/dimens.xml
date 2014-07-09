@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- item_chat.xml -->
+    <dimen name="item_chat_textsize">16sp</dimen>
+    <dimen name="item_chat_textsize_time">9sp</dimen>
+    <dimen name="item_chat_size_img">40dp</dimen>
+    <dimen name="item_chat_margin">10dp</dimen>
+    <dimen name="item_chat_margin_right">15dp</dimen>
+    <dimen name="item_chat_margin_left">55dp</dimen>
+    <dimen name="item_chat_margin_top">2dp</dimen>
+    <!-- layout_chat.xml -->
+    <dimen name="layout_chat_witdh_button_send">80dp</dimen>
+    <dimen name="layout_chat_heigh_form_input">50dp</dimen>
+    <dimen name="layout_chat_heigh_edittext">55dp</dimen>
+    <dimen name="layout_chat_size_button_voice">30dp</dimen>
+    
+    <!-- layout_setting -->
+    <dimen name="layout_setting_fontsize_namelag">20sp</dimen>
+    <dimen name="layout_setting_height_lvLang">100dp</dimen>
+</resources>

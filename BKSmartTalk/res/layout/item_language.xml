@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/item_chat_margin"
+    >
+    <TextView 
+        android:id="@+id/item_lag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Tiếng Việt"
+        android:textSize="@dimen/layout_setting_fontsize_namelag"
+        />
+	<ImageView 
+	    android:id="@+id/item_lag_check"
+	    android:layout_width="@dimen/layout_chat_size_button_voice"
+	    android:layout_height="@dimen/layout_chat_size_button_voice"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/icon_nottick"
+	    android:layout_alignParentRight="true"
+	    />
+</RelativeLayout>
