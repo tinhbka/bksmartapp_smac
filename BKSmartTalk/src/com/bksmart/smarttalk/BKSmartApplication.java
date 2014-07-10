@@ -37,13 +37,15 @@ public class BKSmartApplication extends Application {
 	public static String URL = "http://tech.fpt.com.vn/AIML/api/bots";
 	private LocalStorage localStorage;
 	private Handler handler;
-
+	private int isFirst;
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();
 		BKSmartApplication.setAppContext(getApplicationContext());
 		mPref = PreferenceManager.getDefaultSharedPreferences(mAppContext);
-		BKSmartApplication.Lang = mPref.getString("Lang", "vi");
+		BKSmartApplication.Lang = mPref.getString("Lang", "en");
+		this.isFirst = mPref.getInt("isFirst", 0);
 		myLocale = getResources().getConfiguration().locale;
 		setLocale(Lang);
 		handler = new Handler();
@@ -106,5 +108,14 @@ public class BKSmartApplication extends Application {
 		Configuration conf = res.getConfiguration();
 		conf.locale = myLocale;
 		res.updateConfiguration(conf, dm);
+	}
+	
+	public void setIsFirst(int i){
+		mPref.edit().putInt("isFirst", i).commit();
+		this.isFirst = i;
+	}
+	
+	public int getIsFirst(){
+		return this.isFirst;
 	}
 }

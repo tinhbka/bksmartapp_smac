@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.MailTo;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -30,11 +31,17 @@ public class SettingActivity extends Activity implements OnClickListener {
 	private int mCurItemSelect = -1;
 	Button btSave;
 	BKSmartApplication mApp;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_setting);
-		mApp = (BKSmartApplication)getApplication();
+		mApp = (BKSmartApplication) getApplication();
+		if (mApp.getIsFirst() == 1 && getIntent().getExtras().getBoolean("chat", true)) {
+			startActivity(new Intent(this,ChatActivity.class));
+			finish();
+			return;
+		}
 		myLocale = getResources().getConfiguration().locale;
 		lvLang = (ListView) findViewById(R.id.layout_setting_lvLang);
 		btSave = (Button) findViewById(R.id.layout_setting_btSave);
@@ -101,6 +108,10 @@ public class SettingActivity extends Activity implements OnClickListener {
 						setResult(69);
 					}
 				}
+			}
+			if (mApp.getIsFirst() == 0) {
+				mApp.setIsFirst(1);
+				startActivity(new Intent(this,ChatActivity.class));
 			}
 			finish();
 		}

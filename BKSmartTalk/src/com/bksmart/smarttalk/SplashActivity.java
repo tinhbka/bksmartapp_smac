@@ -14,7 +14,8 @@ public class SplashActivity extends Activity{
 			
 			@Override
 			public void run() {
-				Intent i = new Intent(SplashActivity.this,ChatActivity.class);
+				Intent i = new Intent(SplashActivity.this,SettingActivity.class);
+				i.putExtra("chat", true);
 				finish();
 				startActivity(i);
 			}

@@ -87,6 +87,7 @@ public final class R {
         public static final int a_hour_ago=0x7f06000e;
         public static final int a_minute_ago=0x7f06000c;
         public static final int app_name=0x7f060000;
+        public static final int code_lang=0x7f060013;
         public static final int date=0x7f060008;
         public static final int day_ago=0x7f060010;
         public static final int hour=0x7f060009;
@@ -100,6 +101,7 @@ public final class R {
         public static final int mounth=0x7f060007;
         public static final int save=0x7f060005;
         public static final int setting=0x7f060003;
+        public static final int talk_voice=0x7f060012;
         public static final int yeah=0x7f060006;
         public static final int yesterday=0x7f060011;
     }
